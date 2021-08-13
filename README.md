@@ -1,9 +1,6 @@
 
 ## _Country State City Dropdown _
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)]()
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 ## Installation
 - 1 - Download API https://github.com/IrfanGhuori/Dynamically-Selector/archive/refs/heads/master.zip
 - 2 - Upload the API zip folder to your web server public_html director, using FTP or File Manager.
