@@ -1,0 +1,31 @@
+{
+	"name": "cperezabo/shoutcast-server-information",
+	"type": "library",
+	"description": "A php library to get information from Shoutcast v2",
+	"keywords": [
+		"ioduck",
+		"cperezabo",
+		"shoutcast",
+		"winamp",
+		"server",
+		"information"
+	],
+	"homepage": "https://github.com/cperezabo/shoutcast-server-information",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cristián Pérez",
+			"email": "cristian@ioduck.com",
+			"homepage": "http://ioduck.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"classmap": [
+			"shoutcast.php"
+		]
+	}
+}

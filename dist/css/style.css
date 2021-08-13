@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+  }
+#divLoading	{
+    display : none;
+}
+#divLoading.show{
+    display : block;
+    position : fixed;
+    z-index: 100;
+    background-color:#666;
+    opacity : 0.4;
+    background-repeat : no-repeat;
+    background-position : center;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;
+}
+#loadinggif.show {left : 50%;
+    top : 50%;
+    position : absolute;
+    z-index : 101;
+    width : 32px;
+    height : 32px;
+    margin-left : -16px;
+    margin-top : -16px;
+}
+.alert-danger{
+    display: none;
+}
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f2334c;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+  }
+  .list-group-item{
+    border: 0px !important;
+  }
+  .tutorial
+  {
+      max-height: 700px;
+      overflow: auto;
+      
+  }
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}

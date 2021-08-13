@@ -1,0 +1,273 @@
+<!-- jewGWTnUPRCnRUPb -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Country State City Dropdown.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./dist/css/style.css">
+	<link rel="shortcut icon" href="dist/img/log.ico" type="image/x-icon">
+
+</head>
+
+<body>
+	<div class="container mt-2">
+		<h1>Country State City Dropdown</h1>
+		<br>
+
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+			<span id="message"></span>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+
+		<div class="row  p-2 ">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="country">Country</label>
+					<select class="form-control" id="country">
+						<option value="-1">Select Country</option>
+
+					</select>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="state">State</label>
+					<select class="form-control" id="state">
+						<option>Select State</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="city">City</label>
+					<select class="form-control" id="city">
+						<option>Select City</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-sm-3 ">
+				<div>GETTING STARTED</div>
+				<hr>
+				<ul class="list-group">
+					<li class="list-group-item "><a href="#api-install">Installation</a></li>
+					<li class="list-group-item "><a href="#api-unisntall">Delete</a></li>
+					<li class="list-group-item "><a href="#api-keys">API Key</a></li>
+					<li class="list-group-item "><a href="#use-api">Use API</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 ">
+				<div class="tutorial">
+
+					<div id="api-install">
+						<div class="display-4"> Installation </div>
+						<ul class="list-group">
+							<li class="list-group-item">1 - Download API </li>
+							<li class="list-group-item">2 - Upload the API zip folder to your web server, using FTP.
+							</li>
+							<li class="list-group-item">3 - Create a MySQL database for API or your exists database for
+								api.</li>
+							<li class="list-group-item">4 - Ran installation file path: www.yourDomain.com/api/installer
+							</li>
+							<li class="list-group-item">5 - After installation delete installer folders </li>
+						</ul>
+						<div class="display-4"> Videos tutorial </div>
+						<div class="col-8 mt-3">
+							<video width="600" height="400" controls>
+								<source src="./assets/images/installer.mp4" type="video/mp4">
+							</video>
+
+						</div>
+
+
+						<br><br>
+						<hr>
+						<div id="api-unisntall">
+							<br><br><br>
+							<div class="display-4"> Uninstall API </div>
+							<ul class="list-group">
+								<li class="list-group-item">1 - Go your phpMyAdmin </li>
+								<li class="list-group-item">2 - Drop down 4 columns Name "city","country","key","state"
+								</li>
+								<li class="list-group-item">3 - Delete FOlder name
+									<ol>
+										<li> App folder </li>
+										<li> Dist folder</li>
+										<li> api.html </li>
+									</ol>
+								</li>
+
+							</ul>
+							<div class="display-4"> Videos tutorial </div>
+							<div class="col-8 mt-3">
+								<video width="600" height="400" controls>
+									<source src="./assets/images/uninstall.mp4" type="video/mp4">
+								</video>
+							</div>
+
+						</div>
+
+
+
+
+
+						<br><br>
+						<hr>
+						<div id="api-keys">
+							<br><br><br>
+							<div class="display-4"> API Key </div>
+							<ul class="list-group">
+								<li class="list-group-item">1 - Copy your API key during installation </li>
+								<li class="list-group-item">2 - Paste your API key in ajax script after URL path </li>
+								<li class="list-group-item">3 - If you forgot the copy key, you can copy it from your database.</li>
+
+							</ul>
+							<div class="display-4"> Videos tutorial </div>
+							<div class="col-8 mt-3">
+								<video width="600" height="400" controls>
+									<source src="./assets/images/key.mp4" type="video/mp4">
+								</video>
+							</div>
+
+						</div>
+
+
+
+						<br><br>
+						<hr>
+						<div id="use-api">
+							<br><br><br>
+							<div class="display-4"> Use API </div>
+							<ul class="list-group">
+								<li class="list-group-item">1 - Copy the HTML code. </li>
+								<li class="list-group-item">2 - It is designed with Bootstrap 4, you can easily customize it.</li>
+								<li class="list-group-item">3 - Place the fetcher.js after the jquery library </li>
+
+							</ul>
+<code><pre>
+&lt;script src="YourDomain.com/dist/js/fetcher.js">&lt;/script>
+</pre></code>
+<ul class="list-group">
+<li class="list-group-item">4 - copy ajax code and place it after jquery library. </li>
+</ul>
+<code>
+<pre>
+&lt;script>
+$(document).ready(function () {
+jQuery.ajax({
+type: 'post',
+url: '../api/app/api_countries.php?key=Your-API-Key',
+success: function (countries) {
+if (countries.status == "connected") {
+$.each(countries.data, function (ind, co) {
+jQuery('#country').append("<option value='" + co.id + "'>" + co.name + " </option>");
+});
+} else if (countries.status == "error") {
+$('.alert-danger').fadeIn();
+$('#message').append(countries.message);
+}
+}
+});
+});
+&lt;/script>
+</pre>
+</code>
+
+<ul class="list-group">
+	<li class="list-group-item">4 - Copy the HTML code and place it where you want it to appear. </li>
+	</ul>
+<code>
+	<pre>
+		
+&lt;div class="row">
+	&lt;div class="col-sm-4">
+		&lt;div class="form-group">
+			&lt;label for="country">Country&lt;/label>
+			&lt;select class="form-control" id="country">
+				&lt;option value="-1">Select Country&lt;/option>
+			&lt;/select>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="col-sm-4">
+		&lt;div class="form-group">
+			&lt;label for="state">State&lt;/label>
+			&lt;select class="form-control" id="state">
+				&lt;option>Select State&lt;/option>
+			&lt;/select>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="col-sm-4">
+		&lt;div class="form-group">
+			&lt;label for="city">City&lt;/label>
+			&lt;select class="form-control" id="city">
+				&lt;option>Select City&lt;/option>
+			&lt;/select>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+
+	</pre>
+</code>
+</div>
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+
+		<script>
+		$(document).ready(function () {
+		jQuery.ajax({
+		type: 'post',
+		url: '../api/app/api_countries.php?key=z0bHwnngx6',
+		success: function (countries) {
+		if (countries.status == "connected") {
+		$.each(countries.data, function (ind, co) {
+		jQuery('#country').append("<option value='" + co.id + "'>" + co.name + " </option>");
+		});
+		} else if (countries.status == "error") {
+		$('.alert-danger').fadeIn();
+		$('#message').append(countries.message);
+		}
+		}
+		});
+		});
+
+		$(document).on('click', 'a[href^="#"]', function (e) {
+		e.preventDefault();
+		$('.tutorial').stop().animate({
+		scrollTop: $($(this).attr('href')).offset().top
+		}, 1000, 'linear');
+		});
+		</script>
+		<script src="./dist/js/fetcher.js"></script>
+</body>
+
+</html>
