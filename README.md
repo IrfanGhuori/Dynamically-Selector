@@ -5,36 +5,34 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 ## Installation
-1 - Download API
-2 - Upload the API zip folder to your web server, using FTP.
-3 - Create a MySQL database for API or your exists database for api.
-4 - Ran installation file path: www.yourDomain.com/api/installer
-5 - After installation delete installer folders
+- 1 - Download API https://github.com/IrfanGhuori/Dynamically-Selector/archive/refs/heads/master.zip
+- 2 - Upload the API zip folder to your web server public_html director, using FTP or File Manager.
+- 3 - Create a MySQL database for API or Use exists database for API.
+- 4 - Ran installation file path: www.yourDomain.com/api/installer/
+- 5 - After installation delete installer folders
 
 ## Uninstall API
-1 - Go your phpMyAdmin
-2 - Drop down 4 columns Name "city","country","key","state"
-3 - Delete FOlder name
-App folder
-Dist folder
-api.html
+- 1 - Go your phpMyAdmin
+- 2 - Drop down 4 columns Name "city","country","key","state"
+- 3 - Delete Folder name -> App folder, Dist folder, and file api.html
 
 ## API Key
-1 - Copy your API key during installation
-2 - Paste your API key in ajax script after URL path
-3 - If you forgot the copy key, you can copy it from your database.
+- 1 - Generate your API key and save it on a notepad!.
+- 2 - Paste your API key in ajax script after URL path
+      Example: url: '../api/app/api_countries.php?key=YourKeyHere'.
+- 3 - If you forgot the copy key. You can copy it from your database column name "key".
 
 
 ## Use API
-1 - Copy the HTML code.
-2 - It is designed with Bootstrap 4, you can easily customize it.
-3 - Place the fetcher.js after the jquery library
+- 1 - Copy the HTML code.
+- 2 - It is designed with Bootstrap 4, you can easily customize it.
+- 3 - Add the fetcher.js after the jquery library.
 
 
 ```sh
 <script src="YourDomain.com/dist/js/fetcher.js"></script>
 ```
-4 - copy ajax code and place it after jquery library.
+- 4 - Copy ajax code and place it after jquery library.
 
 ```sh
 <script>
@@ -56,7 +54,7 @@ $('#message').append(countries.message);
 });
 </script>
 ```
-5 - Copy the HTML code and place it where you want it to appear.
+- 5 - Copy the HTML code and place it where you want it to appear.
 
 ```sh
 <div class="row">
