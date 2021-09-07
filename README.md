@@ -3,7 +3,7 @@
 
 ## Installation
 - 1 - Download API https://github.com/IrfanGhuori/Dynamically-Selector/archive/refs/heads/master.zip
-- 2 - Upload the API zip folder to your web server public_html director, using FTP or File Manager.
+- 2 - Upload the API zip folder to your web server public_html directory, using FTP or File Manager.
 - 3 - Create a MySQL database for API or Use exists database for API.
 - 4 - Ran installation file path: www.yourDomain.com/api/installer/
 - 5 - After installation delete installer folders
