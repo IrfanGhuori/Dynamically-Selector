@@ -14,7 +14,7 @@
 - 3 - Delete Folder name -> App folder, Dist folder, and file api.html
 
 ## API Key
-- 1 - Generate your API key and save it on a notepad!
+- 1 - Generate your free API key and save it on a notepad!
 - 2 - Paste your API key in the Ajax script after the URL path
       Example: URL: '../api/app/api_countries.php?key=YourKeyHere'.
 - 3 - If you forgot the copy key. You can copy it from your database column name "key".
