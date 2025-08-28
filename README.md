@@ -22,10 +22,10 @@
 
 ## Use API
 - 1 - Copy the HTML code.
-- 2 - It is designed with Bootstrap 4, so you can easily customize it.
+- 2 - It is designed with Bootstrap 4, so you can easily customise it.
 - 3 - Add the fetcher.js after the jQuery library.
 
-<a href="https://www.youtube.com/watch?v=hp7DBhdC1TU&ab_channel=IrfanGhuori" target="_blank" rel="opener referrer"> Watch Demo </a>
+<a href="https://www.youtube.com/watch?v=hp7DBhdC1TU" target="_blank" rel="opener referrer"> Watch Demo </a>
 
 
 
